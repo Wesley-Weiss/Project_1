@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+    <title>Count Your Blessings</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Count Your Blessings</h1>
+    <p id="description">Share how God has come through for you when you passed through dificult situations</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label id="name-label">
+          Name:
+          <input id="name" type="text" name="Name" placeholder="Eg. John Doe" required/>
+        </label>
+        <label id="email-label">
+          Email:
+          <input id="email" type="email" name="Email" placeholder="Eg. johndoe@example.com" required/>
+        </label>
+        <label id="number-label">
+          Years Walking With God:
+          <input id="number" type="number" name="Phone Number" min="0.0000001" max="100" max-length="12" placeholder="Eg. 5"/>years
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Select the type of situation that God took you out of:
+          <select id="dropdown" name="Category">
+            <option value="">Select an option</option>
+            <option value="Sickness">Sickness</option>  
+            <option value="Financial Constraints">Financial Constraints</option>
+            <option value="Relationship Troubles">Relationship Troubles</option>
+            <option value="Depression">Depression</option>
+             <option value="Addiction">Addiction</option>
+          <select>
+        </label>
+        <label>
+          Would you like your <em>name</em> to be viewable by the public
+          <label>
+            Yes <input id="yes" type="radio" name="public" value="yes" checked/>
+          </label>
+          <label>
+            No <input id="no" type="radio" name="public" value="no"/>
+          </label>
+        </label>
+        <label>
+          Give a vivid description of your situation:
+          <textarea rows="5" placeholder="I am grateful to God for he came through when ...."></textarea>
+        </label>
+      </fieldset>
+      <label>
+        I hereby declare that the above account is completly true <input name="Is true" type= checkbox value="true">
+      </label>
+      <label>
+        I hereby accept for the above account to be shared with the public <input name="Sharable" type= checkbox value="true">
+      </label>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
